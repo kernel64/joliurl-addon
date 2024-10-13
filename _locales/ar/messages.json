@@ -1,0 +1,32 @@
+{
+  "shortenButtonLabel": {
+    "message": " تقليص الرابط "
+  },
+  "LabelLongUrl": {
+    "message": "الرابط الطويل"
+  },
+  "LabelEmail": {
+    "message": "البريد الإلكتروني"
+  },
+  "resultLabel": {
+    "message": "الرابط المختصر:"
+  },
+  "errorMessage": {
+    "message": "فشل في تقليص الرابط."
+  },
+    "defaultErrorMessage": {
+        "message": "<div class=\"icon\"><i class=\"fa fa-times-circle\"></i></div><strong>خطأ!</strong> حدث خطأ."
+    },
+    "errorEmailMessage": {
+        "message": "<div class=\"icon\"><i class=\"fa fa-times-circle\"></i></div><strong>خطأ!</strong> يرجى إدخال عنوان بريد إلكتروني صالح لاستلام روابط الإدارة لعنوان URL الذي تم إنشاؤه."
+    },
+    "errorUrlMessage": {
+        "message": "<div class=\"icon\"><i class=\"fa fa-times-circle\"></i></div><strong>خطأ!</strong> يرجى إدخال عنوان URL صالح."
+    },
+    "defaultSuccessMessage": {
+    "message": "<i class=\"fa fa-check\"></i> <strong>نجاح!</strong> تم تقصير عنوان URL الخاص بك بنجاح!"
+    },
+    "copiedMessage": {
+        "message": "تم النسخ!"
+    }
+}

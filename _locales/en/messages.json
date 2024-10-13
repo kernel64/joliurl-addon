@@ -1,0 +1,33 @@
+{
+    "shortenButtonLabel": {
+        "message": " Shorten URL "
+    },
+    "LabelLongUrl": {
+        "message": "Long URL"
+    },
+    "LabelEmail": {
+        "message": "Email"
+    },
+    "resultLabel": {
+        "message": "Shortened URL:"
+    },
+    "errorMessage": {
+        "message": "Failed to shorten the URL."
+    },
+    "defaultErrorMessage": {
+        "message": "<div class=\"icon\"><i class=\"fa fa-times-circle\"></i></div><strong>Error!</strong> Error occured.!"
+    },
+    "errorEmailMessage": {
+        "message": "<div class=\"icon\"><i class=\"fa fa-times-circle\"></i></div><strong>Error!</strong> Please enter a valid email address to receive administration links for your generated URL."
+    },
+    "errorUrlMessage": {
+        "message": "<div class=\"icon\"><i class=\"fa fa-times-circle\"></i></div><strong>Error!</strong> Please enter a valid URL."
+    },
+    "defaultSuccessMessage": {
+        "message": "<i class=\"fa fa-check\"></i> <strong>Success!</strong> Your URL has been successfully shortened!"
+    },
+    "copiedMessage": {
+        "message": "copied!"
+    }
+  }
+  

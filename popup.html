@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Shorten with JoliURL.com</title>
+  <link rel="stylesheet" href="css/pure-min.css">
+  <link rel="stylesheet" href="css/grids-responsive-min.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body { background-color: #332d2d; font-family:'Open Sans',sans-serif; width: 400px; padding: 10px; height: auto; }
+    button { width: 100%; }
+    .content {
+      padding:0;
+      margin:3% 3%;   
+    }
+    .logo {
+        margin-top: 10px;
+    }
+    .logo img {
+        height: 60px;
+    }
+    .logo_url {
+        margin-left: 10px;
+        line-height: 60px;
+        color: #fff;
+    }
+
+    .alert {
+        padding: 15px;
+        margin-bottom: 20px;
+        border: 1px solid transparent;
+        border-radius: 4px;
+    }
+
+    .alert h4 {
+        margin-top: 0;
+        color: inherit;
+    }
+
+    .alert .alert-link {
+        font-weight: bold;
+    }
+
+    .alert>p,.alert>ul {
+        margin-bottom: 0;
+    }
+
+    .alert>p+p {
+        margin-top: 5px;
+    }
+
+    .alert-success {
+        background-color: #dcf1e4;
+        border-color: #a1dbb8;
+        color: #0c622e;
+    }
+
+    .alert-success .alert-link {
+        color: #2b542c;
+    }
+
+    .alert-warning {
+        background-color: #fcf8e3;
+        border-color: #faebcc;
+        color: #8a6d3b;
+    }
+
+    .alert-warning hr {
+        border-top-color: #f7e1b5;
+    }
+
+    .alert-warning .alert-link {
+        color: #66512c;
+    }
+
+    .alert {
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.11);
+    }
+
+    .alert-success {
+        background-color: #dbf6d3;
+        border-color: #aed4a5;
+        color: #569745;
+    }
+
+
+    .alert-warning {
+        background-color: #fcf8e3;
+        border-color: #f1daab;
+        color: #c09853;
+    }
+
+    .rounded {
+        border-radius: 3px;
+        -webkit-border-radius: 3px;
+    }
+
+    .rounded .icon {
+        border-radius: 3px 0 0 3px;
+        -webkit-border-radius: 3px 0 0 3px;
+    }
+
+    .icon {
+        display: inline-flex;
+        margin: 0 5px;
+    }
+
+    #shtUrl {
+        margin-top: 5px;
+        display: inline-block;
+    }
+    .copyBtn {
+        display: inline-block;
+        margin-left: -5px;
+        height: 36px;
+        border-color: #ccc;
+    }
+
+    .tooltiptext {
+        visibility: hidden;
+        background-color: #000023;
+        color: #fff;
+        text-align: center;
+        padding: 5px 0;
+        border-radius: 6px;
+        position: relative;
+        z-index: 1;
+        width: 120px;
+    }
+    .tooltiptext {
+        bottom: 100%;
+        left: 50%;
+    }
+    .tooltiptext::after {
+        content: " ";
+        position: absolute;
+        bottom: 100%; 
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: transparent transparent black transparent;
+    }
+    #sMessage {
+        margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class='content'>
+      
+      <div id="respOk" class="alert alert-success rounded pure-form " style="display: none;">
+          <p id="sMessage"><i class="fa fa-check"></i> <strong>Success!</strong> Your URL has been successfully shortened!</p>
+          <input id="shtUrl" name="shturl" type="url" class="pure-u-18-24" placeholder="" readonly="" />
+          <div id="copyBtn" class="pure-button copyBtn ">
+            <i class="fa-regular fa-copy"></i>
+        </div>
+        <span id="tooltipTxt" class="tooltiptext">Copied</span>
+      </div>
+
+      <div id="respKo" class="alert alert-warning rounded" style="display: none;">
+        <div class="icon"><i class="fa fa-times-circle"></i></div>
+        <strong>Error!</strong> The server is not responding, try again later.
+      </div>
+
+      <form id="formJoliUrl" class="pure-form" onsubmit="return false;">
+        <fieldset class="pure-group">
+          <textarea id="longUrlInput" name="url" class="pure-input-1" placeholder="Long Url"></textarea>
+        </fieldset>
+        <fieldset class="pure-group">
+          <input id="emailInput" name="email" type="email" class="pure-input-1" placeholder="Email" />
+        </fieldset>
+        <a id="shortenBtn" class="pure-button pure-input-1 pure-button-primary"><i class="fa-solid fa-down-left-and-up-right-to-center"></i> Shorten Url</a>
+    </form>
+    <div class="pure-g logo">
+        <div class="pure-g-2-5"><img class="pure-img" src="icons/logo.svg" /></div>
+        <div class="pure-g-3-5"><a class="logo_url" href="https://joliurl.com" target="_blank">https://joliurl.com</a></div>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+  <script src="js/all.min.js"></script>
+</body>
+</html>

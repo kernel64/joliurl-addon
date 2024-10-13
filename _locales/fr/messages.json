@@ -1,0 +1,32 @@
+{
+    "shortenButtonLabel": {
+      "message": " Raccourcir l'URL "
+    },
+    "LabelLongUrl": {
+      "message": "Longue URL"
+    },
+    "LabelEmail": {
+      "message": "Email"
+    },
+    "resultLabel": {
+      "message": "URL raccourcie :"
+    },
+    "errorMessage": {
+      "message": "Échec du raccourcissement de l'URL."
+    },
+    "defaultErrorMessage": {
+        "message": "<div class=\"icon\"><i class=\"fa fa-times-circle\"></i></div><strong>Erreur !</strong> Une erreur est survenue."
+    },
+    "errorEmailMessage": {
+        "message": "<div class=\"icon\"><i class=\"fa fa-times-circle\"></i></div><strong>Erreur !</strong> Veuillez entrer une adresse e-mail valide pour recevoir les liens d'administration pour votre URL générée."
+    },
+    "errorUrlMessage": {
+        "message": "<div class=\"icon\"><i class=\"fa fa-times-circle\"></i></div><strong>Erreur !</strong> Veuillez entrer une URL valide."
+    },
+    "defaultSuccessMessage": {
+    "message": "<i class=\"fa fa-check\"></i> <strong>Succès !</strong> Votre URL a été raccourcie avec succès !"
+    },
+    "copiedMessage": {
+        "message": "copié !"
+    }
+}
